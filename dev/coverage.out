@@ -1,0 +1,9 @@
+mode: set
+integration_test/service/quote_service.go:18.128,23.2 1 1
+integration_test/service/quote_service.go:25.111,29.16 3 1
+integration_test/service/quote_service.go:34.2,34.21 1 1
+integration_test/service/quote_service.go:40.2,45.16 2 1
+integration_test/service/quote_service.go:50.2,54.17 4 1
+integration_test/service/quote_service.go:29.16,32.3 2 1
+integration_test/service/quote_service.go:34.21,38.3 3 1
+integration_test/service/quote_service.go:45.16,48.3 2 1

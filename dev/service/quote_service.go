@@ -27,10 +27,6 @@ func (q *quoteService) GetQuote(ctx context.Context, req delivery.Request) (res 
 
 	quoteData, quoteErr, err := q.quoteClient.Get(ctx, category)
 	if err != nil {
-		return
-	}
-
-	if err != nil {
 		res.Error = err.Error()
 		return
 	}
