@@ -1,0 +1,30 @@
+server:
+  mode: debug
+  port: 5000
+  shutdown_timeout: 10s
+  endpoint: "/quote"
+
+mongo:
+  host: localhost
+  port: 27017
+  database: quotes
+  collection: quotes
+  username: admin
+  password: admin
+  options:
+    - authSource=admin
+    - retryWrites=true
+    - w=majority
+
+platform:
+  host: https://api.api-ninjas.com
+  api_key: abc
+   
+logger:
+  dir: log                                  # DO NOT EDIT!
+  file_name: delete_product_api
+  max_backups: 0                            # set 0 for unlimited backups
+  max_size: 10                              # in mb
+  max_age: 90                               # in days, set 0 for unlimited days
+  compress: true
+  local_time: true
