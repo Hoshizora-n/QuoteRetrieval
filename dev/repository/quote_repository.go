@@ -12,7 +12,7 @@ type quoteRepo struct {
 	db *mongo.Database
 }
 
-func NewQuoteRepo(db *mongo.Database) QuoteInterface {
+func NewQuoteRepo(db *mongo.Database) QuoteRepoInterface {
 	return &quoteRepo{
 		db: db,
 	}

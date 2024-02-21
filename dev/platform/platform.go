@@ -15,7 +15,7 @@ type quoteClient struct {
 	client *http.Client
 }
 
-func NewQuoteClient() QuoteInterface {
+func NewQuoteClient() QuoteClientInterface {
 	client := &http.Client{}
 
 	return &quoteClient{client: client}

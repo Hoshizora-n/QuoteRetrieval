@@ -5,6 +5,6 @@ import (
 	"integration_test/model/entity"
 )
 
-type QuoteInterface interface {
+type QuoteRepoInterface interface {
 	Insert(ctx context.Context, quote entity.Quote) error
 }

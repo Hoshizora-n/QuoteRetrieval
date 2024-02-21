@@ -10,10 +10,10 @@ import (
 )
 
 type App struct {
-	quoteSvc service.QuoteInterface
+	quoteSvc service.QuoteServiceInterface
 }
 
-func NewApp(quoteSvc service.QuoteInterface) *App {
+func NewApp(quoteSvc service.QuoteServiceInterface) *App {
 	return &App{
 		quoteSvc: quoteSvc,
 	}

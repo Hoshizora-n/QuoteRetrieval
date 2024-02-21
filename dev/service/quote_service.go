@@ -11,11 +11,11 @@ import (
 )
 
 type quoteService struct {
-	quoteClient platform.QuoteInterface
-	quoteRepo   repository.QuoteInterface
+	quoteClient platform.QuoteClientInterface
+	quoteRepo   repository.QuoteRepoInterface
 }
 
-func NewQuoteService(quoteClient platform.QuoteInterface, quoteRepo repository.QuoteInterface) QuoteInterface {
+func NewQuoteService(quoteClient platform.QuoteClientInterface, quoteRepo repository.QuoteRepoInterface) QuoteServiceInterface {
 	return &quoteService{
 		quoteClient: quoteClient,
 		quoteRepo:   quoteRepo,
